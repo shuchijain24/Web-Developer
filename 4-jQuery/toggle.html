@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title> jQuery</title>
+            
+         <script type = "text/javascript" src="jquery.min.js"></script>
+        
+        <style type="text/css">
+        
+            
+            #hiddentext{
+                
+                display: none;
+            }
+        
+        
+        </style>
+          
+       
+    </head>
+
+
+    <body>
+        
+        <p id = "text"> This is some text.</p>
+        
+        <button id="toggle">Toggle text</button>
+        
+<script type="text/javascript">
+            
+        $("#toggle").click(function(){
+        
+            if ($("#text").css("display") == "none") {
+                
+                $("#text").fadeIn();
+                
+            }else{
+                
+                $("#text").fadeOut();
+            }
+            
+        });
+    
+        </script>    
+    
+    </body>
+
+</html>
+    
